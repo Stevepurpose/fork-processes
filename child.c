@@ -45,7 +45,7 @@ else if(pid == 0){
 else{
    printf("parent process with PID:%d running\n", getpid()); 
    
-}while (1) {
+while (1) {
             // Use pause to wait for signals
             pause();
 
@@ -54,6 +54,9 @@ else{
                 break;  // Break the loop if the child has terminated
             }
         }
+         printf("parent process terminating\n");
+
+}
 return 0;
 
 }
